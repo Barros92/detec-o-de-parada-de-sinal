@@ -1,10 +1,10 @@
-# Introdução
+# INTRODUÇÃO
 Neste trabalho irei apresentar uma forma de detecção de parada de sinal.
 Este código leva um sinal de parada "protótipo" (stopPrototype.png) e cria uma pirâmide para fora por meio do downsampling
 
 ![image](https://user-images.githubusercontent.com/32276018/33354042-9735a860-d48f-11e7-8193-4ba4c08ab322.png)
 
-# Downsampling
+# DOWNSAMPLING
 Pyramid, ou representação de pirâmide, é um tipo de representação de sinal de escala múltipla desenvolvida pelas comunidades de processamento de imagem, processamento de imagem e processamento de sinal, em que um sinal ou uma imagem está sujeita a suavização repetida e subamostragem. A representação da pirâmide é uma antecessora da representação da escala espacial e da análise de multi-resolução.
 "No dataset deste projeto se encontra algumas amostras de imagens!"
 
@@ -15,7 +15,7 @@ PASSAGEM BAIXA: Uma pirâmide de passagem baixa é feita suavizando a imagem com
 PASSAGEM DE BANDA: Uma pirâmide de passagem de banda é feita formando a diferença entre imagens em níveis adjacentes na pirâmide e executando algum tipo de interpolação de imagem entre níveis adjacentes de resolução, para permitir a computação de diferenças de pixel. 
 ![image](https://user-images.githubusercontent.com/32276018/33355113-d60eec36-d494-11e7-8a2b-d9b62f85eb45.png)
 
-# Descrição do código
+# DESCRIÇÃO DO CÓDIGO
 
  
 Calcula o erro quadrático médio entre duas matrizes n-d. Baixa = mais semelhante.
