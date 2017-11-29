@@ -81,8 +81,8 @@ t0 = time.time()
 
 Possível erro pode ocorrer pela formatação de espaço por tab.
 
-for p in pyramid(prototypeImg, minSize = 50, maxSize = targetImage.shape[0]):
-    for (x, y, window) in sliding_window(targetImage, stepSize = 2, windowSize = p.shape):
+      for p in pyramid(prototypeImg, minSize = 50, maxSize = targetImage.shape[0]):
+      for (x, y, window) in sliding_window(targetImage, stepSize = 2, windowSize = p.shape):
         if window.shape[0] != p.shape[0] or window.shape[1] != p.shape[1]:
             continue
 
