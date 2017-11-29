@@ -89,11 +89,7 @@ print(maxBox)
 buff1 = 10
 (x, y, w, h) = maxBox
 # possível erro pode ocorrer devido a tranformação para inteiro fazendo com que baixe assim a resolução.No caso de pegar uma imagem grande ele tera dificuldade de realizar a leitura de toda extensão da mesma, fazendo com que print somente uma área padrão ja definida anteriormente.
-
-# Criando retângulo
 cv2.rectangle(targetImage,(int(x-buff1/2),int(y-buff1/2)),(int(x+w+buff1/2),int(y+h+buff1/2)),(0,255,0),2)
-
-
 cv2.imshow('image', targetImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
