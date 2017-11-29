@@ -15,17 +15,18 @@ PASSAGEM BAIXA: Uma pirâmide de passagem baixa é feita suavizando a imagem com
 PASSAGEM DE BANDA: Uma pirâmide de passagem de banda é feita formando a diferença entre imagens em níveis adjacentes na pirâmide e executando algum tipo de interpolação de imagem entre níveis adjacentes de resolução, para permitir a computação de diferenças de pixel. 
 
 # Descrição do código
-#
-# Calcula o erro quadrático médio entre duas matrizes n-d. Baixa = mais semelhante.
-#
-def meanSquareError(img1, img2):
-    assert img1.shape == img2.shape, "Images must be the same shape."
-    error = np.sum((img1.astype("float") - img2.astype("float")) ** 2)
-    error = error/float(img1.shape[0] * img1.shape[1] * img1.shape[2])
-    return error
 
-def compareImages(img1, img2):
-    return 1/meanSquareError(img1, img2)
+ 
+Calcula o erro quadrático médio entre duas matrizes n-d. Baixa = mais semelhante.
+
+# def meanSquareError(img1, img2):
+#   assert img1.shape == img2.shape, "Images must be the same shape."
+#   error = np.sum((img1.astype("float") - img2.astype("float")) ** 2)
+#   error = error/float(img1.shape[0] * img1.shape[1] * img1.shape[2])
+#   return error
+
+# def compareImages(img1, img2):
+#   return 1/meanSquareError(img1, img2)
 
 
 #
