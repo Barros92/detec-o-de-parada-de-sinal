@@ -70,7 +70,7 @@ maxSim = -1
 maxBox = (0,0,0,0)
 
 t0 = time.time()
-# possível erro pode ocorrer pela formatação de espaço por tab
+# Possível erro pode ocorrer pela formatação de espaço por tab
 for p in pyramid(prototypeImg, minSize = 50, maxSize = targetImage.shape[0]):
     for (x, y, window) in sliding_window(targetImage, stepSize = 2, windowSize = p.shape):
         if window.shape[0] != p.shape[0] or window.shape[1] != p.shape[1]:
@@ -88,7 +88,7 @@ print(maxSim)
 print(maxBox)
 buff1 = 10
 (x, y, w, h) = maxBox
-# possível erro pode ocorrer devido a tranformação para inteiro fazendo com que baixe assim a resolução.No caso de pegar uma imagem grande ele tera dificuldade de realizar a leitura de toda extensão da mesma, fazendo com que print somente uma área padrão ja definida anteriormente.
+# Possível erro pode ocorrer devido a tranformação para inteiro fazendo com que baixe assim a resolução.No caso de pegar uma imagem grande ele tera dificuldade de realizar a leitura de toda extensão da mesma, fazendo com que print somente uma área padrão ja definida anteriormente.
 cv2.rectangle(targetImage,(int(x-buff1/2),int(y-buff1/2)),(int(x+w+buff1/2),int(y+h+buff1/2)),(0,255,0),2)
 cv2.imshow('image', targetImage)
 cv2.waitKey(0)
