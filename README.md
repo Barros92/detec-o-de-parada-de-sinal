@@ -13,6 +13,7 @@ Existem dois tipos principais de pirâmides: passagem baixa e passagem de banda.
 PASSAGEM BAIXA: Uma pirâmide de passagem baixa é feita suavizando a imagem com um filtro de suavização apropriado e depois submetendo-se a imagem suavizada, geralmente por um fator de 2 ao longo de cada direção de coordenada. A imagem resultante é então submetida ao mesmo procedimento, e o ciclo é repetido várias vezes. Cada ciclo deste processo resulta em uma imagem menor com suavização aumentada, mas com diminuição da densidade de amostragem espacial (ou seja, redução da resolução da imagem). Se ilustrado graficamente, toda a representação em escala múltipla parecerá uma pirâmide, com a imagem original na parte inferior e a imagem menor resultante de cada ciclo empilhada uma sobre a outra.
 
 PASSAGEM DE BANDA: Uma pirâmide de passagem de banda é feita formando a diferença entre imagens em níveis adjacentes na pirâmide e executando algum tipo de interpolação de imagem entre níveis adjacentes de resolução, para permitir a computação de diferenças de pixel. 
+![image](https://user-images.githubusercontent.com/32276018/33355113-d60eec36-d494-11e7-8a2b-d9b62f85eb45.png)
 
 # Descrição do código
 
