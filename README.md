@@ -93,6 +93,7 @@ cv2.rectangle(targetImage,(int(x-buff1/2),int(y-buff1/2)),(int(x+w+buff1/2),int(
 cv2.imshow('image', targetImage)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+![image](https://user-images.githubusercontent.com/32276018/33354906-e3cd6268-d493-11e7-889c-c98dd0b6a6e3.png)
 
 
 
