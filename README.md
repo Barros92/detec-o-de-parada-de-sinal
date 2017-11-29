@@ -15,9 +15,6 @@ PASSAGEM BAIXA: Uma pirâmide de passagem baixa é feita suavizando a imagem com
 PASSAGEM DE BANDA: Uma pirâmide de passagem de banda é feita formando a diferença entre imagens em níveis adjacentes na pirâmide e executando algum tipo de interpolação de imagem entre níveis adjacentes de resolução, para permitir a computação de diferenças de pixel. 
 
 # Descrição do código
-import imutils
-import numpy as np
-
 #
 # Calcula o erro quadrático médio entre duas matrizes n-d. Baixa = mais semelhante.
 #
@@ -56,11 +53,6 @@ def sliding_window(image, stepSize, windowSize):
     for y in range(0, image.shape[0], stepSize):
         for x in range(0, image.shape[1], stepSize):
             yield (x, y, image[y:y+windowSize[1], x:x+windowSize[1]])
-
-
-import argparse
-import cv2
-import time
 
 # Pega o o prototipo e a as imagens a qual você colocou para realizar a leitura
 ap = argparse.ArgumentParser()
